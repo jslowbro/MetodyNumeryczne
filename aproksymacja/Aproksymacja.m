@@ -1,8 +1,9 @@
 clear all
-s = importdata('dane_apx2.mat');
-% Wczytanie X,Y
-x = s(:,1);
-y = s(:,2);
+apx_data = 'dane_apx2.mat';
+data_set = importdata(apx_data);
+% Loading x_matrix,y_matrix
+x = data_set(:,1);
+y = data_set(:,2);
 
 %Obliczenie dla funkcji a0+a1x+a2e^-x 
 A = [ length(x),     sum(x),          sum(exp(-x));
@@ -13,7 +14,7 @@ b = [ sum(y);
       sum(y.*x);
       sum(y.*exp(-x))];
   
-a=A\b
+a = A\b
 
 %wyswietlenie punktow
 figure, plot([0 10],[0 10],'w')
@@ -23,11 +24,10 @@ for k=1:length(x)
 end
 
 %obliczenie wspó³rzêdnych
-wykresx = 0:0.1:10;
-wykresy = a(1)+a(2).*wykresx+a(3).*exp(-wykresx);
+x_axis = 0:0.1:10;
+y_axis = a(1)+a(2).*x_axis+a(3).*exp(-x_axis);
 
-%wyœwietlenie
-plot(wykresx,wykresy,'b')
+plot(x_axis,y_axis,'b')
 
 hold off
 
