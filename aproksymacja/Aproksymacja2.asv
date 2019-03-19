@@ -36,8 +36,7 @@ hold off
 
 
 %Czas dla n=18000
-format shortG
-t = a(1) + a(2).*18000 + a(3).*(18000.^2)
+t = a(1) + a(2).*1800 + a(3).*(x_axis.^2);
 %wsp uwarunkowania
 condA = cond(A);
 

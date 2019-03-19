@@ -14,7 +14,7 @@ b = [sum(y);
 A = [ length(x), sum(x);
        sum(x), sum(x.*x)];
   
-  
+format shortG
 a = A\b
 
 %nak³adamy punkty aproksymacji
