@@ -6,7 +6,7 @@ x = data_set(:,1);
 y = data_set(:,2);
 b = [ sum(y);
       sum(y.*x);
-      sum(y.*exp(-x))];
+      sum(y.*x^2];
 
 %Obliczenie dla funkcji a0+a1x+a2e^-x 
 A = [ length(x),     sum(x),          sum(exp(-x));
