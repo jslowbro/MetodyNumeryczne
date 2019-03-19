@@ -38,7 +38,7 @@ hold off
 
 format shortG
 
-R = x_axis(70)/y_axis(70)
+R = 1/a(2)
 
 
 %er_y = a(1) + a(2).*x;
