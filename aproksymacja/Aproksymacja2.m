@@ -17,6 +17,9 @@ A = [ length(x),     sum(x),          sum(exp(-x));
   
 a = A\b
 
+
+
+
 %nak³adamy punkty aproksymacji
 figure, plot([0 10],[0 10],'w')
 hold on
@@ -36,10 +39,11 @@ title('Aproksymacja dla zbioru')
 hold off
 
 %wsp uwarunkowania
-condA = cond(A)
+condA = cond(A);
 
+er_y = a(1) + a(2).*x + a(3).*exp(-x);
 %b³ad œredniokwadratowy
-er = custom_error()
+er = custom_error(er_y,y)
 
 %funkcja celu
-I = sum( (y-(a(1)+a(2).*x+a(3).*exp(-x))).^2 )
+I = sum( (y-(a(1)+a(2).*x+a(3).*exp(-x))).^2 );
