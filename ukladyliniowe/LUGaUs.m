@@ -1,4 +1,4 @@
-function x = LU(A,b)
+function x = LUGaUs(A,b)
 
 % input:
 % A = macierz 
