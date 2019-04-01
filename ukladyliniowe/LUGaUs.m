@@ -13,6 +13,6 @@ disp('L = ');disp(L);
 disp('U = ');disp(U);
 d = L\b;
 x= U\d;
-err = A - L*U*v
+err = A - L*U
 disp("x = ");disp(x);
   
