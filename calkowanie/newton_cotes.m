@@ -11,7 +11,7 @@ end
 
 
 if(length(fi)==3)
-  wynik = h/3 * (fi(1) + fi(2) + fi(3));
+  wynik = h/3 * (fi(1) + 4*fi(2) + fi(3));
 end
 
 
