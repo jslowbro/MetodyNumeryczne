@@ -25,7 +25,7 @@ if(length(fi)==5)
 end
 
 
-if(length(fi) > 5)
+if(length(fi) >= 6)
     wynik = NaN;
 end
 

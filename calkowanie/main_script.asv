@@ -1,6 +1,0 @@
-f = @(x) 1x;
-fv = f_values_vector(-1,1,0.01, f);
-adv_newton_cotes(fv, 3, 0.01)
-%newton_cotes([0, 0.0107, 11], 0.5);
-%newton_cotes_vc(fv,-1, 1, 1000, 3);
-
