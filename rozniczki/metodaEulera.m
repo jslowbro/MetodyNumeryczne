@@ -3,12 +3,12 @@ function wyniki = metodaEulera(dfdx, h, x0, y0, koniec)
 %   dfdx - funkcja wartosci pochodnej y, h - krok, x0,y0 - warunki
 %   poczatkowe, koniec - ostatni punkt dla ktorego zosatnie policzony wynik
 %   Pocz?tkiem przedzia?u jest x0
-liczbaWynikow = length(x0:h:koniec);
-wyniki = zeros(2, liczbaWynikow);
+no_solutions = length(x0:h:koniec);
+wyniki = zeros(2, no_solutions);
 
 wyniki(:, 1) = [x0; y0];
 
-for i = 2:liczbaWynikow
+for i = 2:no_solutions
    xp = wyniki(1, i-1);
    yp = wyniki(2, i-1);
    
