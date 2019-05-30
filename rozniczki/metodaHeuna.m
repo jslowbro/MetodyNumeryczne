@@ -1,8 +1,4 @@
 function result = metodaHeuna(dfdx, h, x0, y0, koniec)
-%METODAHEUNA Calkowanie numeryczne metoda Heuna
-%   dfdx - funkcja wartosci pochodnej y, h - krok, x0,y0 - warunki
-%   poczatkowe, koniec - ostatni punkt dla ktorego zosatnie policzony wynik
-%   Pocz?tkiem przedzia?u jest x0
 liczbaWynikow = length(x0:h:koniec);
 result = zeros(2, liczbaWynikow);
 

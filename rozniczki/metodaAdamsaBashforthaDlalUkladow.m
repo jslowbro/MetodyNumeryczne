@@ -1,10 +1,4 @@
 function result = metodaAdamsaBashforthaDlalUkladow(dxdt, dydt, h, x0, y0, t0, koniec, q)
-%METODAADAMSABASHFORTHADLALUKLADOW Calkowanie numeryczne metoda
-%Adamsa-Bashfortah
-%   dfdx - funkcja wartosci pochodnej y, h - krok, x0,y0 - warunki
-%   poczatkowe, koniec - ostatni punkt dla ktorego zosatnie policzony wynik
-%   q - rzad metody
-%   Poczatkiem przedzialu jest x0
 if q < 0 || q > 4
     result = NaN;
     return;

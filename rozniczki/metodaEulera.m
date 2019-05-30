@@ -1,9 +1,4 @@
 function wyniki = metodaEulera(dfdx, h, x0, y0, koniec)
-%METODAEULERA Calkowanie numeryczne metoda Eulera
-%   dfdx - funkcja wartosci pochodnej y, h - krok, x0,y0 - warunki
-%   poczatkowe, koniec - ostatni punkt dla ktorego zosatnie policzony wynik
-%   Pocz?tkiem przedzia?u jest x0
-no_solutions = length(x0:h:koniec);
 wyniki = zeros(2, no_solutions);
 
 wyniki(:, 1) = [x0; y0];
